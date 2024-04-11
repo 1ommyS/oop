@@ -1,5 +1,7 @@
 import bookstore.Book;
 import bookstore.BookStore;
+import order.Order;
+import order.SendOrder;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -41,7 +43,7 @@ public class Main {
         );
 
         System.out.println(book1.getISBN());*/
-
+/*
 
         BookStore store = new BookStore(2);
         Book book1 = new Book("dsadasdas",
@@ -84,6 +86,48 @@ public class Main {
         Book dasdsadsadas = store.getBook("dasdsadsadas");
 
         System.out.println(firstBook);
-        System.out.println(dasdsadsadas);
+        System.out.println(dasdsadsadas);*/
+
+       /* SendOrder sender = new SendOrder();
+
+        sender.sendOrder(
+                new Order(15),
+                "ivan"
+        );*/
+
+        CustomArrayList<String> array = new CustomArrayList<>(3);
+        array.add("1");
+        array.add("3");
+        array.add("4");
+        array.add("5");
+        array.add("6");
+        array.print();
+
+        CustomArrayList<Integer> arr2 = new CustomArrayList<Integer>(3);
+        arr2.add(1);
+        arr2.add(2);
+        arr2.add(3);
+        arr2.print();
+
+        /*
+        int -> Integer
+        long -> Long
+        double -> Double
+        char -> Character
+        float -> Float
+        short > Short
+        boolean -> Boolean
+        byte -> Byte
+         */
+
+        // -128; 128
+        Integer a = 300;
+        Integer b = 300;
+
+        Boolean c = true;
+
+//        System.out.println(a.equals(null));
+//        System.out.println(arr2.getClass());
+        System.out.println(a.equals(c));
     }
 }
